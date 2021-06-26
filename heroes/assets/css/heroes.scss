@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100vw;
+    max-height: fit-content;
+
+    background-color: black;
+}
+
+li {
+    list-style-type: none;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px 0px;
+    padding: 0;
+}
+
+.list__item {
+    font-size: xx-large;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+}
+
+.header__logo {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+}
+
+.main {
+    width: 100vw;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 50px;
+}
+
+.gallery__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    max-width: 400px;
+    height: auto;
+    padding: 10px 20px;
+
+}
+
+.card {
+    border: 1px solid black;
+}
+
+.card__img {
+    min-width: 200px;
+    max-width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+}
+
+.card__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__list {
+    padding-left: 0px;
+}
+
+.card__item {
+    padding-bottom: 10px;
+}
+
+.hero-grade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
