@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         document.getElementById("gallery").innerHTML = "";
 
         for (let hero of heroes) {
-            hero.powers = hero.powers
             document.getElementById("gallery").innerHTML += 
             `<div class="gallery__card card" id="card">
             <div class="img-container">
@@ -18,9 +17,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
                     <ul class="card__list">
                         <li class="card__item">Возраст: ${hero.age}</li>
                         <li class="card__item">Имя: ${hero.alterEgo}</li>
-                        <li class="card__item">Суперсилы: ${hero.powers.join(",").replace(",", ", ")}</li>
-                        <li class="card__item">Род деятельности: гений, миллиардер, плейбой, филантроп</li>
-                        <li class="card__item">Друзья: Мстители</li>
+                        <li class="card__item">Суперсилы: ${hero.powers.join(", ")}</li>
+                        <li class="card__item">Род деятельности: ${hero.activities.join(", ")}</li>
+                        <li class="card__item">Друзья: ${hero.friends.join(", ")}</li>
                     </ul>
                     <div class="hero-grade">
                         <label class="hero-grade__title" for="grade">Моя оценка:</label><br>
@@ -28,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
                     </div>
                 </div>
         </div>`;
-        console.log(hero.powers.join(",").replace(",", ", "));
         }
     });
 });
