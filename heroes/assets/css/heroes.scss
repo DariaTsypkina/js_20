@@ -26,7 +26,7 @@ li {
     justify-content: space-around;
     align-items: center;
     margin: 0px 0px;
-    padding: 0;
+    padding: 10px 0px;
 }
 
 .list__item {
@@ -44,6 +44,9 @@ li {
 
 .main {
     width: 100vw;
+
+    background-image: url(/heroes/assets/images/94668.jpg);
+    object-fit: cover;
 }
 
 .gallery {
@@ -60,7 +63,7 @@ li {
     flex-direction: column;
     align-items: center;
     width: fit-content;
-    max-width: 400px;
+    max-width: 500px;
     height: auto;
     padding: 10px 20px;
 
@@ -68,6 +71,7 @@ li {
 
 .card {
     border: 1px solid black;
+    background-color: white;
 }
 
 .card__img {
@@ -96,4 +100,21 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+
+    &__title {
+        font-weight: bolder;
+    }
+}
+
+.star {
+    position: absolute;
+    left: -10px;
+    bottom: 5px;
+
+    color: gold;
+}
+
+.bold {
+    font-weight: bolder;
 }
