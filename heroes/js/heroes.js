@@ -47,6 +47,7 @@ function setGrade() {
             setStorage(grades);
             }
         }
+
 }
 
 function setStorage(grades) {
