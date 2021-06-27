@@ -7,15 +7,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="normalize.css">
     <title>My GIT Repos</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: aliceblue;
+        }
+
+        a {
+            text-decoration: none;
+            color: green;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 50px;
+        }
+
+        .item {
+            max-width: 320px;
+            padding: 20px;
+            background-color: antiquewhite;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Список проектов на GitHub</h1>
+    <h1>Список публичных проектов на GitHub</h1>
 
     <main class="container" id="container">
-        <div class="item">
 
-        </div>
     </main>
 
     <script src="git.js"></script>
