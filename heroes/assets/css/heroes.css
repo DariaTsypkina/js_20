@@ -145,6 +145,10 @@ li {
   font-weight: bolder;
 }
 
+.hero-grade__input {
+  text-align: center;
+}
+
 .star {
   position: absolute;
   left: -10px;
